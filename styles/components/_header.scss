@@ -148,7 +148,7 @@ label{
 }
 
 ul.nav__site__directory li{
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px;
     color: white;
 }
 
@@ -285,6 +285,7 @@ a{
     .nav__site__directory li{
         border-bottom: 1px dotted white;
         padding-left: 50px;
+        margin-left: 35px;
     }
 
     .shop, .search{
