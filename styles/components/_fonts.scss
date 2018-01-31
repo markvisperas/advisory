@@ -1,6 +1,6 @@
 // FONT FAMILIES
 
-p, li{
+p, ,li{
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: 12px;
     font-weight: 400;
@@ -25,6 +25,10 @@ h2{
 }
 
 h4{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
 
 }
 
@@ -38,5 +42,17 @@ h5{
 h6{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(39, 39, 39, 0.7);
 }
+
+@media (max-width: 940px) {
+
+    .chooseUs p, .banner p, .objective p, .services p, .blog p, .blog h6{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+

@@ -2,9 +2,28 @@
 @import "components/_fonts.scss";
 @import "components/_header.scss";
 @import "components/_objective__services.scss";
+@import "components/_choose_stats.scss";
+@import "components/_project__founder.scss";
+@import "components/_blog.scss";
+@import "components/_footer.scss";
 
+// GLOBAL STYLES
+
+*{
+    transition: 0.3s ease;
+}
+
+body{
+    max-width: 1480px;
+    margin: 0 auto;
+}
 
 .wrapper{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper__header{
     max-width: 70%;
     margin: 0 auto;
 }
@@ -37,7 +56,94 @@ button i{
     margin-top: 5px;
 }
 
+button:hover{
+    background: rgba(161, 137, 137, 0.185);
+    border: 1px solid white;
+}
+
+i:hover{
+    color: #0e2a4e;
+}
+
+ul li:hover{
+    color: #0e2a4e;
+}
+
+img:hover{
+    padding: 10px;
+}
+
+
 .underscore{
     color: #2f87fd;
     text-align: center;
+}
+
+.eclipse{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: -10;
+}
+
+// header
+
+.section__header h1{
+    font-size: 9.5rem;
+    position: absolute;
+    left: 46%;
+    transform: translateX(-50%, -50%);
+    z-index: -1;
+}
+
+.section__header h2{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.section__header h3{
+    text-align: center;
+    padding-top: 55px;
+}
+
+.underscore{
+    padding-bottom: 17px;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 970px) {
+
+    .wrapper{
+        max-width: 80%;
+    }
+
+    .wrapper__header{
+        max-width: 100%;
+    }
+
+    .officeInfo{
+        padding: 0px 10%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    button{
+        margin: 0 auto;
+        height: 65px;
+        width: 225px;
+    }
+
+    .section__header h1{
+        left: 44%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section__header h1{
+        left: 40%;
+    }
 }

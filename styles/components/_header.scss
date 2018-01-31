@@ -4,16 +4,15 @@
 
 .header__main{
     width: 100%;
-    height: 224px;
+    height: 229px;
 }
 
 .nav__contact{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40px;
+    height: 45px;
     background: #f5f5f5;
-
 }
 
 .nav__contact p{
@@ -32,6 +31,10 @@
 .nav__contact__left{
     display: flex;
     flex-direction: row;
+}
+
+.contact__small{
+    display: none;
 }
 
 .nav__contact__right{
@@ -87,11 +90,7 @@
     margin-top: 20px;
 }
 
-.address{
-    width: 25%;
-}
-
-.opTime{
+.address, .opTime{
     width: 25%;
 }
 
@@ -111,6 +110,15 @@
 
 // Nav Site
 
+label{
+    display: none;
+    list-style: none;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    padding: 6.25px 0px;
+}
+
 .nav__site{
     background: #2f87fd;
     display: flex;
@@ -122,16 +130,16 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    width: 70%;
+    width: 66%;
 }
 
 .nav__site__social{
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: flex-end;
-    padding: 0px 10px 0px 0px;
+    justify-content: space-around;
+    padding: 0px 10px 0px 10px;
     align-items: center;
 }
 
@@ -139,10 +147,13 @@
     margin: 0;
 }
 
-.nav__site__directory li{
-    text-transform: uppercase;
+ul.nav__site__directory li{
     padding: 20px 0px;
     color: white;
+}
+
+a{
+    text-decoration: none;
 }
 
 .nav__site__directory li:last-child{
@@ -165,6 +176,10 @@
     margin-left: 40px;
 }
 
+.shop img{
+    width: 80%;
+}
+
 .search{
     border-right: 1px solid #f5f5f53b;
 }
@@ -176,6 +191,7 @@
     background-image: url(../images/header-background.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .banner__content h1, .banner__content p{
@@ -191,3 +207,272 @@
 .banner__button{
     margin-top: 8%;
 }
+
+.angle{
+    width: 60px;
+    height: 60px;
+    background: rgba(162, 200, 252, 0.32);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 47%;
+}
+
+.angle i{
+    font-size: 40px;
+    color: white;
+}
+
+.angle-left{
+    left: 0;
+}
+
+.angle-right{
+    right: 0;
+}
+
+.angle:hover{
+    background: #2f87fd;
+}
+
+
+@media (max-width: 970px) {
+    
+    body{
+        // background: salmon;
+    }
+
+    label{
+        display: inline-block;
+    }    
+
+    .nav__site{
+        width: 100%;
+        flex-direction: column;
+        z-index: 10;
+        position: relative;
+    }
+
+    ul.nav__site__directory{
+        flex-direction: column;
+        background: #2f87fd;
+        width: 100%;
+        padding: 0px;
+        display: none;
+    }
+
+    input #menu{
+        display: none;
+    }
+
+    label:active + ul.nav__site__directory,
+    label:active + ul.nav__site__directory + div.shop,
+    label:active + ul.nav__site__directory + div.shop + div.search,
+    label:active + ul.nav__site__directory + div.shop + div.search + ul.nav__site__social {
+        display: block;
+    }
+
+    label:active + ul.nav__site__directory + div.shop + div.search + ul.nav__site__social {
+        display: flex;
+    }
+
+    ul.nav__site__directory:hover ul.nav__site__directory {
+        display: block;
+    }
+
+    .nav__site__directory li{
+        border-bottom: 1px dotted white;
+        padding-left: 50px;
+    }
+
+    .shop, .search{
+        height: 66px;
+        border-bottom: 1px dotted white;
+        display: none;
+    }
+
+    .search i{
+        font-size: 2rem;
+    }
+
+    .shop img{
+        width: 40px;
+    }
+
+    .search{
+        margin-left: 40px;
+        border-right: none;
+        
+    }
+
+    .nav__site__social{
+        margin-left: 40px;
+        height: 60px;
+        width: 100%;
+        display: none;
+    }
+
+    .nav__site__social li{
+        height: 60px;
+        width: 155px;
+    }
+
+    .nav__site__social i{
+        height: 60px;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner{
+        height: 70vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body{
+        // background: yellow;
+    }
+
+    // NAV CONTACT
+
+    .header__main{
+        height: 254px;
+    }
+
+    .nav__contact{
+        justify-content: space-between;
+        height: 40px;
+        background: #f5f5f5;
+    }
+
+    .nav__contact__left{
+        flex-direction: row;
+    }
+
+    .nav__contact__left p{
+        display: none;
+        height: 40px
+    }
+
+    .nav__contact__right{
+        display: flex;
+        height: 40px;
+        flex-wrap: wrap;
+    }
+
+    // OFFICE INFO
+    .officeInfo{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 0;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .office__icon{
+        display: none;
+    }
+
+    header .logo{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .logo h1{
+        font-size: 3rem;
+    }
+
+    .company__details h5, .company__details p{
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 0.6rem;
+        line-height: 15px;
+        text-align: right;
+    }
+
+    .opTime, .address{
+        position: absolute;
+        top: 125px;
+        z-index: 20;
+    }
+
+
+    .address{
+        left: 45%;
+    }
+
+    .address h5, .opTime h5{
+        margin: 35px 0px 5px 0px;
+    }
+
+    .companyLogo{
+        height: 140px;
+        width: 60px;
+        padding: 30px 10px 10px 0px;
+    }
+
+    .companyLogo img{
+        width: 100%;
+    }
+
+    .logo{
+        width: 70%;
+    }
+
+    .logo h1{
+        margin-top: 20px;
+    }
+
+    .address{
+        width: 25%;
+    }
+
+    .opTime{
+        width: 25%;
+    }
+
+    .consult{
+        border-left: 1px solid rgba(255, 255, 255, 0.438);
+        background: #2f87fd;
+        position: absolute;
+        right: 2px;
+        bottom: -62px;
+        z-index: 20;
+        width: 25%;
+    }
+
+    .consult h5{
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: white;
+        margin: 0 auto;
+    }
+
+    // BANNER
+
+    .banner h1, .banner p{
+        text-align: center;
+    }
+    
+    .banner{
+        height: 100vh;
+    }
+}
+
+    @media (max-width: 480px) {
+
+    .banner h1{
+        font-size: 2.5rem;
+        padding-top: 150px;
+    }
+}
+    
+

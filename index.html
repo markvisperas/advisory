@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 </head>
 <body>
     <header class="header__main">
-        <div class="wrapper">
+        <div class="wrapper__header">
             <nav class="nav__contact">
                 <div class="nav__contact__left">
                     <div class="navIcon">
@@ -30,7 +30,7 @@
                         <div class="navIcon">
                             <img src="images/language.png" alt="">
                         </div>
-                        <p>English</p>
+                        <p>English <img src="images/arrow-down.png" alt=""></p>
                     </div>
                     <ul class="nav__company">
                         <li>About</li>
@@ -48,15 +48,15 @@
                     </h1>
                     <p>Perfect Business Solution</p>
                 </div>
-                <div class="address">
-                    <div class="companyLogo">
+                <div class="address company__details">
+                    <div class="companyLogo office__icon">
                         <img src="images/internet.png" alt="" class="">
                     </div>
                     <h5>Main Office</h5>
                     <p>136 advice the good, CA</p>
                 </div>
-                <div class="opTime">
-                    <div class="companyLogo">
+                <div class="opTime company__details">
+                    <div class="companyLogo office__icon">
                         <img src="images/stopwatch.png" alt="" class="">
                     </div>
                     <h5>Opening Time</h5>
@@ -67,17 +67,32 @@
                 </button>
             </div>
             <nav class="nav__site">
+                <label for="menu">☰</label>
                 <ul class="nav__site__directory">
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>services</li>
-                    <li>projects</li>
-                    <li>blog</li>
-                    <li>shop</li>
-                    <li>Contact</li>
+                    <a href="#home">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#about">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a href="#services">
+                        <li>SERVICES</li>
+                    </a>
+                    <a href="#projects">
+                        <li>PROJECTS</li>
+                    </a>
+                    <a href="#blog">
+                        <li>BLOG</li>
+                    </a>
+                    <a href="#services">
+                        <li>SHOP</li>
+                    </a>
+                    <a href="#footer">
+                        <li>Contact</li>
+                    </a>
                 </ul>
                 <div class="shop">
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <img src="images/shopping-bag.png" alt="">
                 </div>
                 <div class="search">
                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -100,7 +115,7 @@
                     </li>
                 </ul>
             </nav>
-        </div><!-- to closer wrapper -->
+        </div><!-- to closer wrapper__header -->
     </header>
     <section class="banner">
         <div class="wrapper">
@@ -113,14 +128,17 @@
                 </button>
             </div>
         </div><!-- to closer wrapper -->
-            <div class="arrow arrow-left">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <div class="angle angle-left">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
             </div>
-            <div class="arrow arrow-right">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <div class="angle angle-right">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </div>
     </section>
-    <section class="objective">
+    <section class="objective" id="about">
+        <div class="eclipse eclipse1">
+            <img src="images/eclipse-left.png" alt="">
+        </div>
         <div class="wrapper">
             <div class="content__container">
                 <div class="main__content">
@@ -144,7 +162,10 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
+        <div class="eclipse eclipse2">
+            <img src="images/eclipse-right.png" alt="">
+        </div>
         <div class="wrapper">
             <header class="services__header section__header">
                 <h1>S</h1>
@@ -154,251 +175,348 @@
             </header>
             <div class="gallery">
                 <div class="galleryBox box1">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service1.png" alt="">
+                    </div>
                     <h4>Business Growth</h4>
                     <p>Helping you get the greatest strategic advantage from your data management environment</p>
                 </div>
                 <div class="galleryBox box2">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service2.png" alt="">
+                    </div>
                     <h4>Sustainability</h4>
                     <p>When it comes to sustainability & corporate responsibility, complete with power and flexibility</p>
                 </div>
                 <div class="galleryBox box3">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service3.png" alt="">
+                    </div>
                     <h4>Finance Consulting</h4>
                     <p>Finance consulting you get the greatest strategic advantage from your data management</p>
                 </div>
                 <div class="galleryBox box4">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service4.png" alt="">
+                    </div>
                     <h4>Insurance Consulting</h4>
                     <p>Insurance consulting when it comes to sustainability & corporate responsibility, for sure.</p>
                 </div>
                 <div class="galleryBox box5">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service5.png" alt="">
+                    </div>
                     <h4>Insurance Consulting</h4>
                     <p>Helping you get the greatest strategic advantage from your data management environment</p>
                 </div>
                 <div class="galleryBox box6">
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <img src="images/service6.png" alt="">
+                    </div>
                     <h4>B2B Consulting</h4>
                     <p>B2B Helping you get the greatest strategic advanatge from your data management environment</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="chooseUs">
+    <section class="chooseUs">
         <div class="wrapper">
-            <div class="chooseUs__content">
-                <article>
-                    <h2>Why Choosing Advisory</h2>
-                    <div class="underscore"></div>
-                    <h6>Our Services , through corporate renewal, enable a return to profitability</h6>
-                    <p>Advisory Business Consulting offer a wide range of services to businesses either before or during tough financial times. What sets us apart from other firms in the industry is over three decades of combined legal and business expertise. Whether your business is struggling to avoid bankruptcy or trying its best to prepare for it, we will provide the assistance you need to make the right decisions.</p>
-                </article>
+            <div class="chooseUs__container">
+                <div class="chooseUs__content">
+                    <article>
+                        <h2>Why Choosing Advisory</h2>
+                        <div class="underscore">_____</div>
+                        <h6><span class="blue">Our services , through corporate renewal and recovery, enable a return to profitability</span></h6>
+                        <p>Advisory Business Consulting offer a wide range of services to businesses either before or during tough financial times. What sets us apart from other firms in the industry is over three decades of combined legal and business expertise. Whether your business is struggling to avoid bankruptcy or trying its best to prepare for it, we will provide the assistance you need to make the right decisions.</p>
+                    </article>
+                </div>
                 <figure>
-                    <img src="" alt="">
+                    <img src="images/painting.jpg" alt="">
                 </figure>
-            </div>
+            </div><!-- to close chooseUs__container -->
             <div class="appContainer">
                 <article>
                     <header class="app">
-                        <img src="images/notepad.png" alt="">
+                        <div class="app__icon">
+                            <img src="images/notepad.png" alt="">
+                        </div>
                         <h4>Risk Management</h4>
                     </header>
                     <p>Consulting understands that to help meet client challenges</p>
                 </article>
                 <article>
                     <header class="app">
-                        <img src="images/chart.png" alt="">
+                        <div class="app__icon">
+                            <img src="images/chart.png" alt="">
+                        </div>
                         <h4>Strategic Communication</h4>
                     </header>
                     <p>Consulting understands that to help meet client challenges</p>
                 </article>
                 <article>
                     <header class="app">
-                        <img src="images/bullseye.png" alt="">
+                        <div class="app__icon">
+                            <img src="images/bullseye.png" alt="">
+                        </div>
                         <h4>Private Capital Advisory</h4>
                     </header>
                     <p>Consulting understands that to help meet client challenges</p>
                 </article>
-            </div>
-        </div>
+            </div><!-- to close appContainer -->
+        </div><!-- to close wrapper -->
         <div class="stats__banner">
             <div class="stats__banner__info info1">
-                <img src="images/vector.png" alt="">
+                <div class="stats__banner__icon">
+                    <img src="images/vector.png" alt="">
+                </div>
                 <h4>Project Successfull</h4>
-                <h3><span class="blue">2684</span></h3>
+                <h6><span class="blue">2684</span></h6>
             </div>
             <div class="stats__banner__info info2">
-                <img src="images/sound.png" alt="">
+                <div class="stats__banner__icon">
+                    <img src="images/sound.png" alt="">
+                </div>
                 <h4>Experienced Consultants</h4>
-                <h3><span class="blue">3450</span></h3>
+                <h6><span class="blue">3450</span></h6>
             </div>
             <div class="stats__banner__info info3">
-                <img src="images/bullseye.png" alt="">
+                <div class="stats__banner__icon">
+                    <img src="images/bullseye.png" alt="">
+                </div>
                 <h4>Team Members</h4>
-                <h3><span class="blue">125</span></h3>
+                <h6><span class="blue">125</span></h6>
             </div>
             <div class="stats__banner__info info4">
-                <img src="images/chart.png" alt="">
+                <div class="stats__banner__icon">
+                    <img src="images/chart.png" alt="">
+                </div>
                 <h4>Avg Progit Increased</h4>
-                <h3><span class="blue">75%</span></h3>
+                <h6><span class="blue">75%</span></h6>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="project">
+    </section>
+    <section class="project" id="projects">
         <div class="wrapper">
             <header class="project__header section__header">
                 <h1>P</h1>
                 <h3>What we done</h3>
-                <h2>Latest Project</h2>
-                <div class="underscore"></div>
+                <h2><span class="blue">Latest Project</span></h2>
+                <div class="underscore">_____</div>
             </header>
-            <h6>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisafaction.</h6>
-            <div class="moreProject">
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                <h6><span class="blue">More Project</span></h6>
-            </div>
-                <div class="project__photosContainer">
-                    <div class="project__photos">
-                        <img src="images/project_keyboard.jpg" alt="">
-                        <img src="images/project_window.png" alt="">
-                        <img src="images/project_museum.png" alt="">
+            <div class="project__content">
+                <h6>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisafaction.</h6>
+                <div class="moreProject">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <h6><span class="blue">More Project</span></h6>
+                </div>
+            </div><!-- to close project__content -->
+            <div class="project__photosContainer">
+                <div class="project__photos">
+                    <img src="images/project_keyboard.jpg" alt="">
+                </div>
+                <div class="project__photos">
+                    <img src="images/project_window.png" alt="">
+                </div>
+                <div class="project__photos">
+                    <img src="images/project_museum.png" alt="">
+                </div>
+            </div><!-- to close project__photosContainer -->
+        </div>   
+        <div class="founder__container">
+            <div class="wrapper">
+                <div class="founder__segment">
+                    <div class="founder__photos">
+                        <img src="images/founder.jpg" alt="">
                     </div>
-                </div>
-            <div class="founder__container">
-                <div class="founder__photos">
-                    <img src="images/founder.jpg" alt="">
-                </div>
-                <div class="founder__content">
-                    <h6>
-                        Our consultants, engineers and architects bring deep industry and technical knowledge to each engagement, baed on years of experience helping companies around the world adopt software and get strategic.
-                    </h6>
-                    <div class="underscore"></div>
-                    <h6>Mahufuz Riad</h6>
-                    <p>Funder VP</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="blog">
+                    <div class="founder__content">
+                        <h6 class="founder__p">
+                            Our consultants, engineers and architects bring deep industry and technical knowledge to each engagement, baed on years of experience helping companies around the world adopt software and get strategic.
+                        </h6>
+                        <div class="underscore">_____</div>
+                        <h6>Mahufuz Riad</h6>
+                        <p>Funder VP</p>
+                        <div class="oval__container">
+                            <div class="oval"></div>
+                            <div class="oval"></div>
+                            <div class="oval"></div>
+                        </div>
+                    </div><!-- to close founder__content -->
+                </div><!-- to close founder__container -->
+            </div><!-- to closer wrapper -->
+        </div><!-- to close founder__container -->
+    </section>
+    <section class="blog" id="blog">
         <div class="wrapper">
             <header class="blog__header section__header">
                 <h1>B</h1>
                 <h3>From Our Blog</h3>
-                <h2>Latest News</h2>
-                <div class="underscore"></div>
+                <h2><span class="blue">Latest News</span></h2>
+                <div class="underscore">_____</div>
             </header>
-            <h6>Our most popular rect Blog post. We have done more than 10,000 projects in the short period time and all the projects are done.</h6>
-            <div class="moreProject">
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                <h6>
-                    <span class="blue">More Project</span>
-                </h6>
+            <div class="project__content">
+                <h6>Our most popular rect Blog post. We have done more than 10,000 projects in the short period time and all the projects are done.</h6>
+                <div class="moreProject">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <h6>
+                        <span class="blue">More Project</span>
+                    </h6>
+                </div>
             </div>
-            <article class="blog__container blog1">
-                <div class="blog__photo">
-                    <img src="images/blog1.jpg" alt="">
-                </div>
-                <h3>
-                    <span class="blue">Consulting Reports Third Quarter 2017</span>
-                </h3>
-                <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
-            </article>
-            <article class="blog__container blog2">
-                <div class="blog__photo">
-                    <img src="images/blog2.jpg" alt="">
-                </div>
-                <h3>
-                    <span class="blue">Accounting, Legal, Engineering, Dental, Architectural</span>
-                </h3>
-                <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
-            </article>
-            <article class="blog__container blog3">
-                <div class="blog__photo">
-                    <img src="images/blog3.jpg" alt="">
-                </div>
-                <h3>
-                    <span class="blue">When a business can no longer meet the demands of its short/long term</span>
-                </h3>
-                <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
-            </article>
-        </div>
-    </section> -->
-    <!-- <footer>
+            <div class="blog__container">
+                <article class="blog__box blog1">
+                    <div class="blog__photo">
+                        <img src="images/blog1.jpg" alt="">
+                    </div>
+                    <h6>
+                        <span class="blue">Consulting Reports Third Quarter 2017 Financial Results</span>
+                    </h6>
+                    <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
+                    <p><span class="blue">November 06, 2017</span></p>
+                </article>
+                <article class="blog__box blog2">
+                    <div class="blog__photo">
+                        <img src="images/blog2.jpg" alt="">
+                    </div>
+                    <h6>
+                        <span class="blue">Accounting, Legal, Engineering, Dental, Architectural</span>
+                    </h6>
+                    <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
+                    <p><span class="blue">November 06, 2017</span>
+                    </p>
+                </article>
+                <article class="blog__box blog3">
+                    <div class="blog__photo">
+                        <img src="images/blog3.jpg" alt="">
+                    </div>
+                    <h6>
+                        <span class="blue">When a business can no longer meet the demands</span>
+                    </h6>
+                    <p>For the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
+                    <p><span class="blue">November 06, 2017</span>
+                    </p>
+                </article>
+            </div><!-- to close blog__container -->
+        </div><!-- to close wrapper -->
+    </section>
+    <footer id="footer">
         <div class="partners__banner">
-            <img src="" alt="">
-        </div>
+            <div class="wrapper">
+                <div class="partners__container">
+                    <div class="partners">
+                        <img src="images/footer1.png" alt="">
+                    </div>
+                    <div class="partners">
+                        <img src="images/footer2.png" alt="">
+                    </div>
+                    <div class="partners">
+                        <img src="images/footer3.png" alt="">
+                    </div>
+                    <div class="partners">
+                        <img src="images/footer4.png" alt="">
+                    </div>
+                </div><!-- to close partners__container -->
+            </div><!-- to closer wrapper -->
+        </div><!-- to close partners__banner -->
         <div class="wrapper">
-            <div class="contact__bar">
-                <img src="images/mail.png" alt="">
-                <p>Advisory@gmail.com</p>
-                <img src="images/phone.png" alt="">
-                <p>+88 01912704287</p>
-                <img src="images/pin.png" alt="">
-                <p>143, New York, NY 10018</p>
-            </div>
-            <div class="company__bio">
-                <div class="logo">
-                    <img src="images/logo.png" alt="" class="">
-                    <h1>Advisor
-                        <span class="blue">y</span>
-                    </h1>
-                    <p>Perfect Business Solution</p>
+            <div class="footer__bottom__container">
+                <div class="contact__bar__container">
+                    <div class="contact__bar">
+                        <div class="contact__bar__photo mail">
+                            <img src="images/mail.png" alt="">
+                        </div>
+                        <p>Advisory@gmail.com</p>
+                    </div>
+                    <div class="contact__bar">
+                        <div class="contact__bar__photo">
+                            <img src="images/phone.png" alt="">
+                        </div>
+                        <p>+88 01912704287</p>
+                    </div>
+                    <div class="contact__bar">
+                        <div class="contact__bar__photo">
+                            <img src="images/pin.png" alt="">
+                        </div>
+                        <p>143, New York, NY 10018</p>
+                    </div>
+                </div><!-- to close contact__bar__container -->
+                <div class="contact__bar__shadow">
                 </div>
-                <p>Over 20 yeas of experiene we'll ensure you always get the best guidance. We serve a clients at every level of their orgnization we can be most whether as a trusted advisor</p>
-                <p><span class="blue">Receive news right om your email</span></p>
-                <input type="email" name="" id="">
-            </div>
-            <div class="focus">
-                <h6>Our Quick Focus</h6>
-                <ul class="footer__focus">
-                    <li>Business Transformation</li>
-                    <li>Business Growth</li>
-                    <li>Sustainability</li>
-                    <li>Performance</li>
-                    <li>Customer Insights</li>
-                    <li>B2B COnsulting</li>
-                    <li>Insurance Consulting</li>
-                </ul>
-            </div>
-            <div class="latestNews">
-                <div class="news__container news1">
-                    <h6>Latest News</h6>
-                    <p>
-                        <span class="blue">Business processes are fundamental to every company</span>
-                    </p>
-                </div>
-                <div class="news__container news2">
-                    <h6>Latest News</h6>
-                    <p>
-                        <span class="blue">Business processes are fundamental to every company</span>
-                    </p>
-                </div>
-            </div>
+                <div class="footer__content">
+                    <div class="company__bio">
+                        <div class="footer__logo">
+                            <div class="logoImage">
+                                <img src="images/logo.png" alt="" class="">
+                            </div>
+                            <h1>Advisor<span class="blue">y</span>
+                            </h1>
+                            <p>Perfect Business Solution</p>
+                        </div>
+                        <p>Over 20 yeas of experiene we'll ensure you always get the best guidance. We serve a clients at every level of their orgnization we can be most whether as a trusted advisor</p>
+                        <p><span class="blue">Receive news right on your email</span></p>
+                        <input type="email" name="" value="  Your email" id="">
+                        <button id="submit">
+                            <img src="images/plane.png" alt="">
+                        </button>
+                    </div>
+                    <div class="focus">
+                        <h6>Our Quick Focus</h6>
+                        <ul class="footer__focus">
+                            <li>Business Transformation</li>
+                            <li>Business Growth</li>
+                            <li>Sustainability</li>
+                            <li>Performance</li>
+                            <li>Customer Insights</li>
+                            <li>B2B COnsulting</li>
+                            <li>Insurance Consulting</li>
+                        </ul>
+                    </div>
+                    <div class="latestNews">
+                        <div class="news__container news1">
+                            <h6>Latest News</h6>
+                            <h6>
+                                <span class="blue">Business processes are fundamental to every company</span>
+                            </h6>
+                            <p><span class="grey">November 12, 2017</span></p>
+                        </div>
+                        <div class="news__container news2">
+                            <h6>Latest News</h6>
+                            <h6>
+                                <span class="blue">Business processes are fundamental to every company</span>
+                            </h6>
+                            <p>
+                                <span class="grey">November 12, 2017</span>
+                            </hp>
+                            <h6>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <span class="blue">Get a Quote</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div><!-- to close footer content -->
+            </div><!-- to close footer__bottom__container -->
             <nav class="footer__social">
-                <ul class="footer__icons">
-                    <li>
-                        <i class="fa fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-facebook"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-linkedin"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-pinterest-p"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-google"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-vine"></i>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer> -->
+                    <ul class="footer__icons">
+                        <li>
+                            <i class="fa fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-linkedin"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-pinterest-p"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-google"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-vine"></i>
+                        </li>
+                    </ul>
+                </nav>
+        </div><!-- to close wrapper -->
+    </footer>
 </body>
 </html>

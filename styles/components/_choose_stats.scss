@@ -1,0 +1,178 @@
+// CHOOSE US
+
+.chooseUs__container{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.chooseUs__content{
+    width: 60%;
+    padding-right: 30px;
+
+}
+
+.chooseUs article{
+    width: 100%;
+}
+
+.chooseUs .underscore{
+    text-align: left;
+}
+
+.chooseUs h6{
+    margin-bottom: 30px;
+}
+
+.chooseUs figure{
+    width: 40%;
+}
+
+.chooseUs__container img{
+    width: 100%;
+}
+
+// APP CONTAINER
+
+.appContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.appContainer article{
+    width: 32%;
+    padding: 30px;
+    border: 1px solid #f5f5f5;
+}
+
+.appContainer article:hover{
+    border-left: 1px solid #2f87fd;
+}
+
+.app{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.app h4{
+    margin-left: 10px;
+}
+
+.app p{
+    margin-bottom: 30px;
+}
+
+.app__icon{
+    height: 25px;
+    width: 25px;
+}
+
+.app__icon img{
+    width: 100%;
+}
+
+// STATS BANNER
+
+.stats__banner{
+    display: flex;
+    flex-direction: row;
+    background: #1f2329;
+}
+
+.stats__banner__info{
+    width: 25%;
+    padding: 60px 60px 40px 60px;
+    border-right: 1px solid #f5f5f52a;
+}
+
+.info1{
+    padding: 60px 60px 40px 120px;
+}
+
+.stats__banner__icon{
+    height: 40px;
+    width: 40px;
+}
+
+.stats__banner__icon img{
+    width: 100%;
+}
+
+.stats__banner__info h4{
+    color: white;
+    margin: 20px 0px;
+}
+
+.stats__banner__info h6{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+@media (max-width: 940px) {
+
+
+    .info1{
+        padding-left: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .chooseUs__container{
+        flex-direction: column-reverse;
+    }
+
+    .chooseUs__content{
+        width: 100%;
+        margin-top: 60px;
+        padding-right: 0px;
+    }
+
+    .chooseUs__container figure{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .chooseUs__container h2, .chooseUs__container h6, .chooseUs__container p, .chooseUs__container .underscore{
+        text-align: center;
+    }
+
+    .appContainer{
+        flex-direction: column;
+    }
+
+    .appContainer article{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .stats__banner{
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+
+    .stats__banner__info{
+        width: 60%;
+        padding: 60px 60px 40px 60px;
+        border-bottom: 1px solid #f5f5f52a;
+        background: #1f2329;
+        margin: 0 auto;
+        
+    }
+
+    .info1{
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .appContainer article{
+        width: 100%;
+    }
+}

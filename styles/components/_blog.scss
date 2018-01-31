@@ -1,0 +1,39 @@
+// BLOG
+
+.blog__header h1{
+    color: #ebebeb;
+}
+
+.blog__container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.blog__box{
+    width: 32%;
+}
+
+.blog__box img{
+    width: 100%;
+}
+
+.blog__container h6{
+    margin: 30px 0px 20px 0px;
+}
+
+.blog__container p{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    
+    .blog__container{
+        flex-direction: column;
+    }
+
+    .blog__box{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
