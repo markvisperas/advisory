@@ -339,7 +339,7 @@ label {
   margin: 0; }
 
 ul.nav__site__directory li {
-  padding: 20px 0px;
+  padding: 20px 0px 0px 20px;
   color: white; }
 
 a {
@@ -542,6 +542,8 @@ a {
     position: absolute;
     top: 125px;
     z-index: 20; }
+  .address h5, .address p {
+    text-align: left; }
   .address {
     left: 45%; }
   .address h5, .opTime h5 {
